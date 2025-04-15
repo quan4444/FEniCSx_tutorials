@@ -57,4 +57,4 @@ $
 
 The tutorial for the cylinder torsion is located in ``tutorials/cylinder_torsion.ipynb``, edited from a version written by [Eric Stewart](https://github.com/SolidMechanicsCoupledTheories/FEniCSx_codes/tree/main). The result of the twisting is shown below:
 
-https://github.com/quan4444/FEniCSx_tutorials/tutorials/figures/twisted_long_cylinder.mp4
+![gif](tutorials/figures/twisted_long_cylinder.gif)
