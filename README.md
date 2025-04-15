@@ -33,28 +33,6 @@ This tutorial (``tutorials/mesh_cylinder.ipynb``) guides you through meshing a c
 For a deeper dive into Gmsh meshing tailored for FEniCSx, check out this detailed [tutorial](https://jsdokken.com/src/tutorial_gmsh.html) by Dokken.
 
 ## Twisting a Cylinder <a name="twist"></a>
-Now that we have a cylinder mesh, we can twist the mesh by fixing the bottom, and applying the following Dirichlet boundary conditions at the top:
-
-$u_x=0,$
-
-$
-u_y = \left(
-    y_0 + 
-    (x_1 - y_0) \cos\left(\theta_{\text{tot}} \left(\frac{t}{T}\right)\right) - 
-    (x_2 - z_0) \sin\left(\theta_{\text{tot}} \left(\frac{t}{T}\right)\right) - 
-    x_1
-\right),
-$
-
-$
-u_z = \left(
-    y_0 + 
-    (x_1 - y_0) \cdot \cos\left(\theta_{\text{tot}} \cdot \left(\frac{\text{Time\_cons}}{T_{\text{tot}}}\right)\right) - 
-    (x_2 - z_0) \cdot \sin\left(\theta_{\text{tot}} \cdot \left(\frac{\text{Time\_cons}}{T_{\text{tot}}}\right)\right) - 
-    x_1
-\right).
-$
-
-The tutorial for the cylinder torsion is located in ``tutorials/cylinder_torsion.ipynb``, edited from a version written by [Eric Stewart](https://github.com/SolidMechanicsCoupledTheories/FEniCSx_codes/tree/main). The result of the twisting is shown below:
+Now that we have a cylinder mesh, we can twist the mesh by fixing the bottom, and applying a torsional Dirichlet boundary conditions at the top. The tutorial for the cylinder torsion is located in ``tutorials/cylinder_torsion.ipynb``, edited from a version written by [Eric Stewart](https://github.com/SolidMechanicsCoupledTheories/FEniCSx_codes/tree/main). The result of the twisting is shown below:
 
 ![gif](tutorials/figures/twisted_long_cylinder.gif)
